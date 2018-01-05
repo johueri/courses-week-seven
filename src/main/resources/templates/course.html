@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Course</title>
+</head>
+<body>
+	
+	<header>
+	<h1>This is a course</h1>
+	</header>
+<div>
+	<h1 th:text="${course.name}"></h1>
+	 <h2 th:text ="$course.description}"></h2>
+	 <h2 th:text=" 'Instructor: ' + $(course.instructor}"></h2>
+	 <a href="http://localhoas:8080/courses">Home</a>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+<<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>A list of courses</title>
+</head>
+<body>
+	
+	<h3><a href="/courses">Our Courses</a></h3>
+	<h3><a href="/instructors">Our Instructors</a></h3>
+		<header>
+			<h1>An Epic List of Courses</h1>
+		</header>
+
+		<div th:each"course: ${courses}">
+			<h2><a th:href=@{/course(id=${course.id})}" th:text = "${course.name}"></a></h2>
+</body>
+</html>
